@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue2</title>
+</head>
+<body>
+    
+    <div id="ejemplo1">
+        {{mensaje}}
+    </div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <div id="ejemplo2">
+        <label>
+            Mensaje: <input type="text", v-model:valor="mensaje">
+        </label>
+
+        <p>{{mensaje}}</p>
+    </div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <div id="ejemplo3">
+        <ul>
+            <li>{{nombre}}</li>
+            <li>{{apellido}}</li>
+            <li>{{nombreCompleto()}}</li>
+        </ul>
+    </div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <div id="ejemplo4">
+        <label>
+            Nombre: <input type="text" v-model:value="nombre">
+        </label>
+        <br><br>
+        <label>
+            Apellido: <input type="text" v-model:value="apellido">
+        </label>
+
+        <p>{{nombreCompleto}}</p>
+
+    </div>
+    
+    <hr>
+    <hr>
+    <hr>
+
+    <div id="ejemplo5">
+        <div v-html="contenidohtml">
+            <img v-bind:src="Imgsrc" v-bind:alt="">
+        </div>
+    </div>
+
+    <div id="ejemplo6">
+
+    </div>
+
+    <div id="ejemplo7">
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
+    <script src="vue2.js"></script>
+</body>
+</html>
